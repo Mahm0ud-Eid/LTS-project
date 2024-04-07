@@ -1,5 +1,7 @@
 :root {
   --mainColor: rgb(255, 131, 0);
+  --second-color: #2f2e2a;
+  --p-color: #1a202c;
 }
 /* Start Global Rules */
 * {
@@ -20,6 +22,21 @@ body {
   font-family: "Rouge Script", cursive;
   font-weight: 400;
   font-style: normal;
+}
+@media (min-width: 370px) {
+  .about {
+    width: 350px;
+  }
+}
+@media (min-width: 480px) {
+  .about {
+    width: 450px;
+  }
+}
+@media (min-width: 600px) {
+  .about {
+    width: 580px;
+  }
 }
 
 /* Small */
@@ -178,7 +195,7 @@ ul li:hover {
 
 /* Start Landing */
 .landing {
-  background-color: #5f5e58;
+  background-color: var(--second-color);
   display: flex;
   flex-wrap: nowrap;
 
@@ -226,3 +243,41 @@ figcaption {
   font-weight: 500;
 }
 /* End Landing */
+
+/* Start About */
+.about {
+  padding-left: 15px;
+  h2,
+  h3 {
+    color: var(--second-color);
+    margin-top: 0;
+    padding-top: 15px;
+  }
+  h2 + p {
+    background-color: #edefee;
+    padding: 15px;
+    border-radius: 12px;
+    color: var(--p-color);
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    img {
+      display: block;
+      width: 100%;
+      border-radius: inherit;
+      padding-bottom: 15px;
+    }
+  }
+}
+summary + p {
+  margin-left: 15px;
+  padding-left: 15px;
+  border-radius: 4px;
+  background-color: #edefee;
+  color: var(--p-color);
+}
+/* End About */
+
+/* Start Menu */
+
+/* End Menu */
