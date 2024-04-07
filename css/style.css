@@ -28,6 +28,7 @@ body {
     width: 350px;
   }
 }
+
 @media (min-width: 480px) {
   .about {
     width: 450px;
@@ -61,9 +62,6 @@ body {
 
 /* Start Header */
 @media (max-width: 677px) {
-  header nav {
-    justify-content: space-around;
-  }
   header .links {
     position: relative;
     width: 40px;
@@ -73,6 +71,7 @@ body {
     width: 100%;
   }
   header .links:hover ul {
+    border-bottom: none;
     display: block;
   }
   .links .icon {
@@ -102,6 +101,9 @@ body {
     display: none;
     padding-left: 0;
     padding-right: 0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 12px;
   }
   header .links ul::before {
     content: "";
@@ -114,14 +116,20 @@ body {
   }
   header .links ul a {
     display: block;
-    padding: 5px;
+    padding: 10px;
     color: #333;
     transition: 0.3s;
   }
   header .links ul li:not(:last-child) a {
     border-bottom: 1px solid #d7d4d4;
   }
-
+  header .links ul li:last-child a:hover {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+  header .links ul li:first-child a:hover {
+    border-top-left-radius: 12px;
+  }
   header .links ul a:hover {
     padding-left: 20px;
     background-color: var(--mainColor, orange);
@@ -141,7 +149,7 @@ header {
 }
 header nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 .logo {
@@ -149,6 +157,7 @@ header nav {
   justify-content: space-between;
   align-items: center;
   min-width: 212px;
+  margin-right: 30px;
   img {
     width: 60px;
   }
@@ -177,7 +186,7 @@ ul {
   padding: 0 10px 0 10px;
   list-style: none;
   margin: 0;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid transparent;
   a {
     color: #333; /* blue colors for links too */
     text-decoration: inherit; /* no underline */
@@ -281,6 +290,7 @@ summary + p {
 /* Start Menu */
 .menu {
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 table ::selection {
   background-color: white;
@@ -316,6 +326,19 @@ table thead {
     border: 0 solid black;
   }
 }
+table thead th:first-of-type {
+  border-top-left-radius: 12px;
+}
+table thead th:last-of-type {
+  border-top-right-radius: 12px;
+}
+table tfoot tr td:first-of-type {
+  border-bottom-left-radius: 12px;
+}
+table tfoot tr td:last-of-type {
+  border-bottom-right-radius: 12px;
+}
+
 .to-top {
   position: fixed;
   background-color: #eee;
@@ -342,3 +365,26 @@ table thead {
 /* End Menu */
 
 /* Start Footer */
+.foot {
+  height: 200px;
+  font-size: larger;
+  font-weight: bolder;
+  padding: 0 20px 0 20px;
+  color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  text-wrap: nowrap;
+}
+@media (min-width: 300px) {
+  .foot {
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 625px) {
+  .foot {
+    justify-content: space-around;
+  }
+}
+/* End Footer */
