@@ -7,6 +7,9 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+body {
+  font-family: "Work Sans", sans-serif;
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -63,8 +66,6 @@
     position: absolute;
     right: 5px;
     top: -20px;
-  }
-  header .links ul {
   }
   header .links ul a {
     display: block;
