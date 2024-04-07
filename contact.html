@@ -59,57 +59,68 @@
     </header>
     <!-- End Header -->
 
-    <!-- Start Landing -->
-    <section class="landing landing-contact">
-      <div>
-        <h1 class="h1">
-          <span class="welcome">Contact</span>
-          <span class="logo-word brand">
-            <abbr title="Little Taco Shop">LTS</abbr>
-          </span>
-        </h1>
-
-        <figure>
-          <img src="img/tacos_and_drink_400x267.png" alt="" />
-          <figcaption>Tacos and a Drink</figcaption>
-        </figure>
-      </div>
-
-      <div>
-        <form action="https://httpbin.org/get" method="get">
-          <fieldset>
-            <label>Name</label><br />
-            <input type="text" required placeholder="Your Name" name="user" />
-            <br />
-            <label>Email</label> <br />
-            <input type="email" placeholder="Your Email" name="mail" /><br />
-            <label>Your Message:</label><br />
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="9"
-              placeholder="Type your message here"
-            ></textarea>
-          </fieldset>
-          <input type="submit" value="send" />
-          <input type="reset" value="Reset" />
-        </form>
-      </div>
-    </section>
-    <!-- End Landing -->
     <main>
-      <h2>Our Location</h2>
-      <address>
-        555 Taco Temptation Lane, Suite T <br />
-        Kansas City, MO 55555-5555 <br /><br />
-        phone: <a href="tel:+201111111111">01111111111</a>
-      </address>
-      <br />
-      <a href="#">Back To Top</a>
-    </main>
-    <hr />
+      <!-- Start Landing -->
+      <section class="landing landing-contact">
+        <div>
+          <h1 class="h1">
+            <span class="welcome">Contact</span>
+            <span class="logo-word brand">
+              <abbr title="Little Taco Shop">LTS</abbr>
+            </span>
+          </h1>
 
-    <footer>Copyright &copy; The Little Taco Shop</footer>
+          <figure>
+            <img src="img/tacos_close_up_400x260.png" alt="" />
+            <figcaption>Tacos and a Drink</figcaption>
+          </figure>
+        </div>
+
+        <div>
+          <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+              <label>Name</label><br />
+              <input type="text" required placeholder="Your Name" name="user" />
+              <br />
+              <label>Email</label> <br />
+              <input type="email" placeholder="Your Email" name="mail" /><br />
+              <label>Your Message:</label><br />
+              <textarea
+                name=""
+                id=""
+                cols="18"
+                rows="6"
+                placeholder="Type your message here"
+              ></textarea>
+            </fieldset>
+            <input type="submit" value="send" />
+            <input type="reset" value="Reset" />
+          </form>
+        </div>
+      </section>
+      <!-- End Landing -->
+    </main>
+
+    <!-- Start Footer -->
+    <footer>
+      <div class="landing foot foot-contact">
+        <span class="logo-word brand">The Little Taco Shop</span>
+
+        <!-- Start Location -->
+        <div class="">
+          <h2>Our Location</h2>
+          <address>
+            555 Taco Temptation Lane, Suite T <br />
+            Kansas City, MO 55555-5555 <br /><br />
+            phone: <a href="tel:+201111111111">01111111111</a>
+          </address>
+          <br />
+        </div>
+        <!-- End Location -->
+      </div>
+      <p class="footer-cp">All Rights Reservered &copy;</p>
+
+      <a href="#" class="to-top"><i class="fa-solid fa-arrow-up"></i></a>
+    </footer>
   </body>
 </html>

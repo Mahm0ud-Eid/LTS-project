@@ -421,6 +421,35 @@ table tfoot tr td:last-of-type {
     }
     [value]:hover {
       background-color: var(--mainColor);
+      color: white;
     }
   }
 }
+/* End Contact Us Landing */
+
+/* Start Contact Us Footer */
+footer {
+  padding-top: 10px;
+  background-color: white;
+  height: 300px;
+}
+footer h2 {
+  margin-top: 0;
+}
+.footer-cp {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  margin-top: 36px;
+  font-size: large;
+  font-weight: 500;
+  color: var(--second-color);
+}
+
+.foot-contact {
+  padding-top: 38px;
+  margin-top: 10px;
+  background-color: white;
+  color: var(--second-color);
+}
+/* End Contact Us Footer */
