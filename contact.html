@@ -8,55 +8,97 @@
       name="description"
       content="Contact information for the Little Taco Shop"
     />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- project css files links -->
     <link rel="stylesheet" href="css/style.css" />
-    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!--  logo font from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!-- main font from google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- fav icon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>Contact LTS</title>
   </head>
   <body>
-    <header id="top">
-      <h1>Contact Us</h1>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="index.html#about">About LTS</a></li>
-        <li><a href="index.html#menu">Our Menu</a></li>
-        <li><a href="hours.html">Store Hours</a></li>
-      </ul>
+    <!-- Start Header -->
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <img src="img/logo/taco log rmbg.png" alt="" />
+            <p class="logo-word">Little Taco Shop</p>
+          </div>
 
-      <figure>
-        <img src="img/tacos_close_up_400x260.png" alt="" />
-        <figcaption>A Tray Of Tasty Tacos</figcaption>
-      </figure>
+          <div class="links">
+            <span class="icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/#menu">Our Menu</a></li>
+              <li><a href="hours.html">Store Hours</a></li>
+              <li><a href="/#about">About LTS</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
+    <!-- End Header -->
 
+    <!-- Start Landing -->
+    <section class="landing landing-contact">
+      <div>
+        <h1 class="h1">
+          <span class="welcome">Contact</span>
+          <span class="logo-word brand">
+            <abbr title="Little Taco Shop">LTS</abbr>
+          </span>
+        </h1>
+
+        <figure>
+          <img src="img/tacos_and_drink_400x267.png" alt="" />
+          <figcaption>Tacos and a Drink</figcaption>
+        </figure>
+      </div>
+
+      <div>
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <label>Name</label><br />
+            <input type="text" required placeholder="Your Name" name="user" />
+            <br />
+            <label>Email</label> <br />
+            <input type="email" placeholder="Your Email" name="mail" /><br />
+            <label>Your Message:</label><br />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="9"
+              placeholder="Type your message here"
+            ></textarea>
+          </fieldset>
+          <input type="submit" value="send" />
+          <input type="reset" value="Reset" />
+        </form>
+      </div>
+    </section>
+    <!-- End Landing -->
     <main>
-      <h2>Our Contact Form</h2>
-      <form action="https://httpbin.org/get" method="get">
-        <fieldset>
-          <legend>send Us A Message</legend>
-
-          <label>Name</label>
-          <input type="text" required placeholder="Your Name" name="user" />
-          <br />
-          <br />
-
-          <label>Email</label>
-          <input type="email" placeholder="Your Email" name="mail" />
-          <br />
-          <br />
-          <label>Your Message:</label><br />
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="9"
-            placeholder="Type your message here"
-          ></textarea
-          ><br /><br />
-        </fieldset>
-        <input type="submit" value="send" />
-        <input type="reset" value="Reset" />
-      </form>
-
       <h2>Our Location</h2>
       <address>
         555 Taco Temptation Lane, Suite T <br />
