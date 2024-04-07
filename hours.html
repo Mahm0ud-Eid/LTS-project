@@ -6,41 +6,89 @@
     <meta name="auther" content="Uncle Eid" />
     <meta name="description" content="Store Hours For the Little Taco Shop" />
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- project css files links -->
     <link rel="stylesheet" href="css/style.css" />
-    <title>LTS hours</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!--  logo font from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!-- main font from google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- fav icon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>LTS Hours</title>
   </head>
   <body>
-    <header id="top">
-      <h1>The Little Taco Shop Hours</h1>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#about">About LTS</a></li>
-        <li><a href="index.html#menu">Our Menu</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
+    <!-- Start Header -->
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <img src="img/logo/taco log rmbg.png" alt="" />
+            <p class="logo-word">Little Taco Shop</p>
+          </div>
 
-      <figure>
-        <img src="img/tacos_tray_400x267.png" alt="" />
-        <figcaption>A Tray Of Tasty Tacos</figcaption>
-      </figure>
+          <div class="links">
+            <span class="icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
 
-      <hr />
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/#menu">Our Menu</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="/#about">About LTS</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
+    <!-- End Header -->
 
     <main>
-      <p>We Are Open 7 days a week!</p>
-      <dl>
-        <dt>Sunday-Thursday</dt>
-        <dd>11am-9am</dd>
+      <!-- Start Landing -->
+      <section class="landing">
+        <div>
+          <h1 class="h1">
+            <p class="welcome">We Are Open 7 days a week!</p>
+          </h1>
 
-        <dt>Friday-Saturday</dt>
-        <dd>11am-11pm</dd>
-      </dl>
+          <figure>
+            <img src="img/tacos_tray_400x267.png" alt="" />
+            <figcaption>A Tray Of Tasty Tacos</figcaption>
+          </figure>
+        </div>
 
-      <a href="#top">Back To Top</a>
+        <div class="landing foot hours-landing">
+          <dl>
+            <dt>Sunday-Thursday</dt>
+            <dd>11am-9am</dd>
+            <br />
+            <dt>Friday-Saturday</dt>
+            <dd>11am-11pm</dd>
+          </dl>
+        </div>
+      </section>
+      <!-- End Landing -->
+
+      <a href="#" class="to-top"><i class="fa-solid fa-arrow-up"></i></a>
     </main>
-    <hr />
 
-    <footer>Copyright &copy; The Little Taco Shop</footer>
+    <footer class="landing foot foot-hours">
+      <p class="welcome">All Rights Reservered &copy;</p>
+      <span class="logo-word brand">The Little Taco Shop</span>
+    </footer>
   </body>
 </html>

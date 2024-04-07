@@ -453,3 +453,20 @@ footer h2 {
   color: var(--second-color);
 }
 /* End Contact Us Footer */
+
+/* Start Hours Landing */
+@media (min-width: 710px) {
+  .hours-landing {
+    position: relative;
+    bottom: -190px;
+    background-color: transparent;
+  }
+}
+/* End Hours Landing */
+
+/* Start Hours Footer */
+.foot-hours {
+  background-color: white;
+  color: var(--second-color);
+}
+/* End Hours Footer */
