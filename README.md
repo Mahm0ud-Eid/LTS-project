@@ -1,7 +1,8 @@
-# Little Taco Shop Project
+# LTS Project
 
 Welcome to the **Little Taco Shop** project!  
 This repository contains the source code for the official website of the Little Taco Shop restaurant.
+It is owned and maintained by [Mahm0ud-Eid](https://github.com/Mahm0ud-Eid). The project was created in April 2024 and is actively maintained.
 
 ## Overview
 
@@ -56,6 +57,11 @@ This project is open source and available under the [MIT License](LICENSE).
 ## Contact
 
 For questions or feedback, please contact the repository owner or visit the Little Taco Shop in person!
+
+## Links
+
+- [Repository Link](https://github.com/Mahm0ud-Eid/LTS-project)
+- [Owner Profile](https://github.com/Mahm0ud-Eid)
 
 ---
 
